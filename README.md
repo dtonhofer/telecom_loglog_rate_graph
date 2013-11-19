@@ -30,7 +30,7 @@ The program can run on any OS as long as the following is installed:
    * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) ;
    * [Groovy](http://groovy.codehaus.org/), i.e. the 'groovy-all.jar' must be on the Java CLASSPATH (see the [Groovy Quickstart](http://groovy.codehaus.org/Quick+Start)) ;
    * For the logging interface: [SLF4J](http://www.slf4j.org/) i.e. the 'slf4-api.jar' and 'jul-to-slf4j.jar' must be on the Java CLASSPATH ;
-   * For the logging implementation: [Logback](http://logback.qos.ch/), i.e. the 'logback-classic.jar' and 'logback-core.jar' can also be on the Java CLASSPATH.
+   * For the logging implementation: [Logback](http://logback.qos.ch/), i.e. the 'logback-classic.jar' and 'logback-core.jar' must be on the Java CLASSPATH.
 
 The repository is actually an Eclipse IDE project, so it can be directly imported. The needed jars are not provided though.
 I will probably have to write a pom to pull these in at some point.
