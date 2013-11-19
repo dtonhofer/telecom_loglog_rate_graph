@@ -25,8 +25,11 @@ The program can run on any OS as long as the following is installed:
 
    * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
    * [Groovy](http://groovy.codehaus.org/), i.e. the 'groovy-all.jar' must be on the Java CLASSPATH (see the [Groovy Quickstart](http://groovy.codehaus.org/Quick+Start)
-   * [SLF4J](http://www.slf4j.org/), i.e. the 'slf4-api.jar' must be on the Java CLASSPATH
+   * [SLF4J](http://www.slf4j.org/), i.e. the 'slf4-api.jar' and 'jul-to-slf4j.jar' must be on the Java CLASSPATH
    * Optionally, [Logback](http://logback.qos.ch/), i.e. the 'logback-classic.jar' and 'logback-core.jar' can also be on the Java CLASSPATH
+
+The repository is actually an Eclipse IDE project, so it can be directly imported. The needed jars are not provided though.
+I will probably have to write a pom to pull these in at some point.
 
 Example output
 --------------
@@ -56,3 +59,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+Code by M-PLIFY S.A.
+--------------------
+
+Code by M-PLIFY S.A. is included in the repository. It deals with
+logging and parameter checking. That code is also under MIT License. 
