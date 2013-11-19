@@ -56,10 +56,10 @@ This tool was written while under contract by Q-LEAP but with extensive personal
 
 Distributed under the MIT License, see http://opensource.org/licenses/MIT
 
-Copyright (c) 2013
-Q-LEAP S.A.
-14, rue Aldringen
-L-1118 Luxembourg
+Copyright (c) 2013<br>
+Q-LEAP S.A.<br>
+14, rue Aldringen<br>
+L-1118 Luxembourg<br>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
