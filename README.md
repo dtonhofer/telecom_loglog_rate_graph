@@ -36,9 +36,9 @@ Example output
 
 These are reduced versions of the generated diagrams:
 
-![Internet connection services marketed by 'Post Luxembourg'](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/blob/master/imagesgraph.POST.small.png "Internet connection services marketed by 'Post Luxembourg'")
+![Internet connection services marketed by 'Post Luxembourg'](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/master/images/graph.POST.small.png "Internet connection services marketed by 'Post Luxembourg'")
 
-![Internet connection services marketed by Cable Operators](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/blob/master/imagesgraph.CABLEOPERATORS.small.png "Internet connection services marketed by Cable-Operators")
+![Internet connection services marketed by Cable Operators](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/master/images/graph.CABLEOPERATORS.small.png "Internet connection services marketed by Cable-Operators")
 
 
 License
