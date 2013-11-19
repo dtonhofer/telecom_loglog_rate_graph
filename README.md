@@ -16,7 +16,11 @@ This is not full-featured application. It is a Groovy script that generates the 
    * Writes them to disk
 
 Input data for the diagrams can be found in class `eu.qleap.smc_uhd.rateplot.desc.RateData`. Additional flexibility
-is implemented by editing the source code! 
+is implemented by editing the source code!!
+
+The relevant classes are here:
+
+![Project tree in Eclipse](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/master/images/Project_Tree.png "Project tree in Eclipse")
 
 How to run it
 -------------
