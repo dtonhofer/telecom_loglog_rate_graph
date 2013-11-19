@@ -1,0 +1,32 @@
+<!-- This is the logback logging configuration -->
+
+<configuration debug="true" scan="true"> 
+  
+  <!-- Print incoming logback status messages to the console -->
+
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />  
+ 
+  <!-- Changes in level shall be propagated to java.util.logging -->
+
+  <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator" />
+
+  <!-- An appender which writes to the console. Not usually used -->
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+     <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+         <layout class="com.mplify.logging.layout.AlphaLayout" />
+     </encoder>
+  </appender>
+
+  <!-- Set the root logger to "info" and its appender to the STDOUT appender -->
+  
+  <root level="debug">
+      <appender-ref ref="STDOUT" />
+  </root>
+
+  <!-- logger configuration -->
+
+  <logger level="WARN"  name="com.mplify.dbconn.PoolFrontend" />
+<!--   <logger level="WARN"  name="com.mplify.store" />  -->
+  
+</configuration>
