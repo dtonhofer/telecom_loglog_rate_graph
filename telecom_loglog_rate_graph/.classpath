@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="/xtern_third_party_jars/slf4j/slf4j-api.jar" sourcepath="/xtern_third_party_jars/slf4j/slf4j-api-sources.jar"/>
 	<classpathentry kind="lib" path="/xtern_third_party_jars/slf4j/jul-to-slf4j.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/utils_checks"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/utils_logging"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
