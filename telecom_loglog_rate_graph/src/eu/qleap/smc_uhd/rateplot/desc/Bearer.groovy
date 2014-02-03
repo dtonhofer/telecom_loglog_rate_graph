@@ -1,6 +1,6 @@
 package eu.qleap.smc_uhd.rateplot.desc;
 
-import com.mplify.checkers.Check;
+import static com.example.BasicChecks.*;
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
  * *****************************************************************************
@@ -51,8 +51,8 @@ enum Bearer {
             Bearer b -> b.value == x
         }        
         if (res == null) {
-            Check.fail("Illegal value %d passed", x)
-            throw new Error(Check.NEVER_GET_HERE_BUT_NEEDED_FOR_KEEPING_COMPILER_HAPPY)
+            instaFail("Illegal value {} passed", x)
+            throw new Error(NEVER_GETTING_HERE_BUT_KEEPING_COMPILER_HAPPY)
         }
         return res
     }

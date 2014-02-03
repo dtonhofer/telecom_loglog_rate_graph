@@ -17,7 +17,7 @@ import javax.imageio.ImageIO
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-import com.mplify.checkers.Check
+import static com.example.BasicChecks.*
 
 import eu.qleap.smc_uhd.rateplot.desc.RateData
 import eu.qleap.smc_uhd.rateplot.desc.RateRegion
@@ -324,7 +324,7 @@ class Graphiste {
                         case Shape.NABLA:  sym.drawNabla(imgSpacePos, color); break
                         case Shape.CROSS:  sym.drawCross(imgSpacePos, color); break
                         default:
-                            Check.fail("Cannot draw shape '${shape}'")
+                            instaFail("Cannot draw shape '${shape}'")
                     }
                     TEXT: {
                         String up_txt   = GridLabel.textSpeed((rd.up_mbps * 1000) as Long)

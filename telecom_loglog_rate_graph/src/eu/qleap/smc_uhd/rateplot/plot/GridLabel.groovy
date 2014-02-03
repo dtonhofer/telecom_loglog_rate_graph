@@ -2,7 +2,7 @@ package eu.qleap.smc_uhd.rateplot.plot
 
 import java.awt.geom.Point2D
 
-import com.mplify.checkers.Check
+import static com.example.BasicChecks.*
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
  * *****************************************************************************
@@ -70,7 +70,7 @@ class GridLabel {
             }
         }
         else {
-            Check.fail("Terabit/s is a bit large")
+            instaFail("Terabit/s is a bit large")
         }
     }
     

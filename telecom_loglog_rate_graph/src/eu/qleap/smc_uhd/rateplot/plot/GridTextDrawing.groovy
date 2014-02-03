@@ -10,7 +10,7 @@ import java.awt.geom.AffineTransform
 import java.awt.geom.Point2D
 import java.awt.geom.Rectangle2D
 
-import com.mplify.checkers.Check;
+import static com.example.BasicChecks.*;
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
  * *****************************************************************************
@@ -159,7 +159,7 @@ class GridTextDrawing {
             g2.translate(0, -(txtconr.minY + txtconr.height/2))
         }
         else {
-            Check.fail("Unhandled 'WhereIsY' value '${whereIsY}'")
+            instaFail("Unhandled 'WhereIsY' value '${whereIsY}'")
         }
         //
         // We may want to set the X coordinate to not lie on the baseline
@@ -179,7 +179,7 @@ class GridTextDrawing {
             g2.translate(-(txtconr.minX + txtconr.width/2), 0)
         }
         else {
-            Check.fail("Unhandled 'WhereIsX' value '${whereIsX}'")
+            instaFail("Unhandled 'WhereIsX' value '${whereIsX}'")
         }
         //
         // Rotation east (in the bitmap system, 90 degree clockwise)

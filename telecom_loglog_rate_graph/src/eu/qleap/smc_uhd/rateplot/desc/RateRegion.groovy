@@ -3,7 +3,7 @@ package eu.qleap.smc_uhd.rateplot.desc
 import java.awt.Color;
 import java.awt.geom.Point2D
 
-import com.mplify.checkers.Check
+import static com.example.BasicChecks.*
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
  * *****************************************************************************
@@ -36,10 +36,10 @@ class RateRegion {
     final List<Point2D> corners_valuespace    
     
     private RateRegion(Level l, Characteristic c, Point2D ... p) {
-        Check.notNull(l, "level")
-        Check.notNull(c, "characteristic")
-        Check.notNull(p, "array of points")        
-        Check.isTrue(p.length >= 3, "size of array of points is too small: '%d'", p.length)
+        checkNotNull(l, "level")
+        checkNotNull(c, "characteristic")
+        checkNotNull(p, "array of points")        
+        checkTrue(p.length >= 3, "size of array of points is too small: '%d'", p.length)
         this.level = l
         this.chara = c
         this.color = determineColor(l, c)
@@ -122,7 +122,7 @@ class RateRegion {
                 return new RateRegion(l,c,n0_a1,n0_a2,n0_a3,n0_a4,n0_a5,n0_a6)
             }
             else {
-                Check.fail("Unknown characteristic '${c}'")
+                instaFail("Unknown characteristic '${c}'")
             }
         }
         else if (l == Level.Niveau1) {
@@ -133,7 +133,7 @@ class RateRegion {
                 return new RateRegion(l,c,n1_a1_slow,n1_a2_slow,n1_a3_slow,n1_a4_slow)
             }
             else {
-                Check.fail("Unknown characteristic '${c}'")
+                instaFail("Unknown characteristic '${c}'")
             }
         }
         else if (l == Level.Niveau2) {
@@ -144,7 +144,7 @@ class RateRegion {
                 return new RateRegion(l,c,n2_a1_slow,n2_a2_slow,n2_a3_slow,n2_a4_slow)
             }
             else {
-                Check.fail("Unknown characteristic '${c}'")
+                instaFail("Unknown characteristic '${c}'")
             }
         }
         else if (l == Level.Niveau3) {
@@ -155,11 +155,11 @@ class RateRegion {
                 return new RateRegion(l,c,n3_a1_slow,n3_a2_slow,n3_a3_slow,n3_a4_slow)
             }
             else {
-                Check.fail("Unknown characteristic '${c}'")
+                instaFail("Unknown characteristic '${c}'")
             }
         }
         else {
-            Check.fail("Unknown level '${l}'")
+            instaFail("Unknown level '${l}'")
         }
     }
 

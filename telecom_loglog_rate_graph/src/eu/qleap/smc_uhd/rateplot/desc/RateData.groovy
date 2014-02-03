@@ -1,6 +1,6 @@
 package eu.qleap.smc_uhd.rateplot.desc;
 
-import com.mplify.checkers.Check
+import static com.example.BasicChecks.*
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
  * *****************************************************************************
@@ -86,11 +86,11 @@ class RateData {
      */
 
     RateData(Double down_mbps, Double up_mbps, Origin origin, String desc, Bearer bearer, Operator operator) {
-        Check.notNull(down_mbps, "down_mbps");
-        Check.isTrue(Math.signum(down_mbps) > 0, "Downstream rate is negative or 0");
+        checkNotNull(down_mbps, "down_mbps");
+        checkTrue(Math.signum(down_mbps) > 0, "Downstream rate is negative or 0");
         Check.notNullAndNotOnlyWhitespace(desc, "desc");
-        Check.notNull(origin, "origin");
-        Check.isTrue(Check.imply(up_mbps == null, origin == Origin.POLITICAL), "Upstream may only be null in case of origin = '%s'", Origin.POLITICAL)
+        checkNotNull(origin, "origin");
+        checkTrue(Check.imply(up_mbps == null, origin == Origin.POLITICAL), "Upstream may only be null in case of origin = '%s'", Origin.POLITICAL)
         this.down_mbps  = down_mbps
         this.up_mbps    = up_mbps
         this.origin     = origin
@@ -98,7 +98,7 @@ class RateData {
         this.bearer     = bearer
         this.operator   = operator
         if (this.up_mbps != null) {
-            Check.isTrue(Math.signum(up_mbps) > 0, "Upstream rate is negative or 0");
+            checkTrue(Math.signum(up_mbps) > 0, "Upstream rate is negative or 0");
         }
     }
 
