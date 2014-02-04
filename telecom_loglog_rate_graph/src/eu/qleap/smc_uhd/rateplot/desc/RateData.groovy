@@ -88,9 +88,9 @@ class RateData {
     RateData(Double down_mbps, Double up_mbps, Origin origin, String desc, Bearer bearer, Operator operator) {
         checkNotNull(down_mbps, "down_mbps");
         checkTrue(Math.signum(down_mbps) > 0, "Downstream rate is negative or 0");
-        Check.notNullAndNotOnlyWhitespace(desc, "desc");
+        checkNotNullAndNotOnlyWhitespace(desc, "desc");
         checkNotNull(origin, "origin");
-        checkTrue(Check.imply(up_mbps == null, origin == Origin.POLITICAL), "Upstream may only be null in case of origin = '%s'", Origin.POLITICAL)
+        checkTrue(imply(up_mbps == null, origin == Origin.POLITICAL), "Upstream may only be null in case of origin = '%s'", Origin.POLITICAL)
         this.down_mbps  = down_mbps
         this.up_mbps    = up_mbps
         this.origin     = origin
