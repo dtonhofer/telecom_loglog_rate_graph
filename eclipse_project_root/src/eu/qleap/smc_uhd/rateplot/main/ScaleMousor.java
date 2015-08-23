@@ -4,13 +4,6 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, Q-LEAP S.A. 
- *                     14 rue Aldringen
- *                     L-1118 Luxembourg
- *
- * Distributed under the MIT License (http://opensource.org/licenses/MIT)
- *******************************************************************************
  *******************************************************************************
  * A simple Mouse wheel listener 
  * 

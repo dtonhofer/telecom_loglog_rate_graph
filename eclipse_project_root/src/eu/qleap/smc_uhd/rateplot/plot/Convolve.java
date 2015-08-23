@@ -3,7 +3,7 @@ package eu.qleap.smc_uhd.rateplot.plot;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
 
-import static com.example.BasicChecks.*;
+import static name.heavycarbon.checks.BasicChecks.*;
 
 public class Convolve {
 
@@ -12,6 +12,7 @@ public class Convolve {
      * See http://docs.oracle.com/javase/7/docs/api/java/awt/image/ConvolveOp.html
      */
 
+    @SuppressWarnings("unused")
     private static ConvolveOp getGaussianBlurFilter(int radius, boolean horizontal) {
         checkTrue(radius >= 1, "Radius must be >= 1");
         int size = radius * 2 + 1;

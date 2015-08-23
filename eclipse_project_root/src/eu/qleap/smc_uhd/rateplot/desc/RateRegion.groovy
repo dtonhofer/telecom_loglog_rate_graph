@@ -3,16 +3,9 @@ package eu.qleap.smc_uhd.rateplot.desc
 import java.awt.Color;
 import java.awt.geom.Point2D
 
-import static com.example.BasicChecks.*
+import static name.heavycarbon.checks.BasicChecks.*;
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, Q-LEAP S.A. 
- *                     14 rue Aldringen
- *                     L-1118 Luxembourg
- *
- * Distributed under the MIT License (http://opensource.org/licenses/MIT)
- *******************************************************************************
  *******************************************************************************
  * Represent a "UHD region" which is illustrated with an appropriately-colored
  * polygon in the final graph.  

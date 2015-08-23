@@ -18,13 +18,6 @@ import eu.qleap.smc_uhd.rateplot.plot.Graphiste
 import eu.qleap.smc_uhd.rateplot.plot.Shape
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, Q-LEAP S.A.
- *                     14 rue Aldringen
- *                     L-1118 Luxembourg
- *
- * Distributed under the MIT License (http://opensource.org/licenses/MIT)
- *******************************************************************************
  *******************************************************************************
  * 1) Define "RateData"
  * 2) Select the "RateData" one is interested in

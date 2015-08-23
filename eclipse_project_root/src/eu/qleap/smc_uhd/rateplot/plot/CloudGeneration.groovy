@@ -13,17 +13,10 @@ import javax.naming.LimitExceededException;
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-import com.mplify.logstarter.LogbackStarter
+import name.heavycarbon.logstarter.LogbackStarter
 
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, q-leap S.A.
- *                     14, rue Aldringen
- *                     L-1118 LUXEMBOURG
- *
- * All rights reserved.
- *******************************************************************************
  *******************************************************************************
  * Generation a "cloud of points" around an "ADSL point" using a simple and
  * naive model.

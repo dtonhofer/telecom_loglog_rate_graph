@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/home/hobbes/Development/3rd_party_libs/slf4j/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/home/hobbes/Development/3rd_party_libs/logback/logback-core.jar"/>
+	<classpathentry kind="lib" path="/home/hobbes/Development/3rd_party_libs/logback/logback-classic.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/xtern_third_party_jars/logback/logback-classic.jar"/>
-	<classpathentry kind="lib" path="/xtern_third_party_jars/logback/logback-core.jar"/>
-	<classpathentry kind="lib" path="/xtern_third_party_jars/slf4j/slf4j-api.jar" sourcepath="/xtern_third_party_jars/slf4j/slf4j-api-sources.jar"/>
-	<classpathentry kind="lib" path="/xtern_third_party_jars/slf4j/jul-to-slf4j.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/utils_checks"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/utils_logging"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/utils_other"/>
+	<classpathentry kind="lib" path="/home/hobbes/Development/3rd_party_libs/name.heavycarbon.checks/checks.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

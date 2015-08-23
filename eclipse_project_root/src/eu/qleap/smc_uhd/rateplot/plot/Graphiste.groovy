@@ -17,7 +17,7 @@ import javax.imageio.ImageIO
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-import static com.example.BasicChecks.*
+import static name.heavycarbon.checks.BasicChecks.*;
 
 import eu.qleap.smc_uhd.rateplot.desc.RateData
 import eu.qleap.smc_uhd.rateplot.desc.RateRegion
@@ -27,13 +27,6 @@ import eu.qleap.smc_uhd.rateplot.desc.RateRegion.Level
 import eu.qleap.smc_uhd.rateplot.desc.Vdsl2Plot.Profile
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, Q-LEAP S.A.
- *                     14 rue Aldringen
- *                     L-1118 Luxembourg
- *
- * Distributed under the MIT License (http://opensource.org/licenses/MIT)
- *******************************************************************************
  *******************************************************************************
  * The main drawing function, pulls things together
  *

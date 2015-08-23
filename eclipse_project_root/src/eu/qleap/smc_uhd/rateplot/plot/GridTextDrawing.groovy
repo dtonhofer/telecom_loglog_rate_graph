@@ -10,16 +10,9 @@ import java.awt.geom.AffineTransform
 import java.awt.geom.Point2D
 import java.awt.geom.Rectangle2D
 
-import static com.example.BasicChecks.*;
+import static name.heavycarbon.checks.BasicChecks.*;
 
 /* 34567890123456789012345678901234567890123456789012345678901234567890123456789
- * *****************************************************************************
- * Copyright (c) 2013, Q-LEAP S.A.
- *                     14 rue Aldringen
- *                     L-1118 Luxembourg
- *
- * Distributed under the MIT License (http://opensource.org/licenses/MIT)
- *******************************************************************************
  *******************************************************************************
  * Facility to draw text along X/Y grid
  *
