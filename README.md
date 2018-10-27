@@ -1,5 +1,9 @@
 # telecom_loglog_rate_graph
 
+## Status
+
+- Frozen in time and unmaintained!
+
 ## What is it
 
 Draw loglog graphs of the downstream/upstream rates of ISP services, whith particular regions in the final graph
@@ -44,6 +48,8 @@ The colored regions designate the various "Ultra-High-Speed" service levels:
 
 ![Internet connection services marketed by Luxembourg's Cable Operators](https://raw.github.com/dtonhofer/telecom_loglog_rate_graph/master/images/graph.CABLEOPERATORS.small.png "Internet connection services marketed by Luxembourg's Cable Operators")
 <i>Internet connection services marketed by Luxembourg's Cable Operator</i>
+
+Take a look at the "images" folder for the fully sized result.
 
 ## License
 
